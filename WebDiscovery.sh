@@ -7,6 +7,7 @@ hosts=("192.168.214")
 
 function ctrl_c(){
 	echo -e "\n\e[1;31m[!] Saliendo...\n\e[1;37m"
+	tput cnorm
 	exit 1
 }
 trap ctrl_c INT
